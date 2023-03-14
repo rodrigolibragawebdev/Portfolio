@@ -37,10 +37,6 @@ body {
   color: white;
 }
 
-.container {
-  width: 1200px;
-}
-
 a {
   text-decoration: none;
   color: white;
@@ -57,41 +53,100 @@ button {
   cursor: pointer;
 }
 
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.container {
+  width: 1200px;
 }
 
-@media (max-width: 1024px) {
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
   .container {
-    width: 90%;
+    width: 100%;
   }
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.1;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  h5 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 15px;
+    line-height: 1.3;
+  }
+}
+@media (min-width: 501px) and (max-width: 900px) {
+  h1 {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.1;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 19px;
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  h5 {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 15px;
+    line-height: 1.3;
+  }
+}
+.hidden {
+  display: none;
+}
+
 header {
   padding: 20px 0;
-  display: flex;
-  justify-content: center;
   background-color: #090909;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-header #navContainer {
-  width: 1200px;
+header .navContainer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: end;
   padding: 0 20px;
 }
-header #navContainer .ulNavBar {
+header .navContainer .ulNavBar {
   list-style: none;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   color: white;
   gap: 20px;
 }
-header #navContainer .ulNavBar .navBtn {
+header .navContainer .ulNavBar .navBtn {
   background-color: transparent;
   border: 2px solid white;
   color: white;
@@ -99,15 +154,15 @@ header #navContainer .ulNavBar .navBtn {
   border-radius: 10px;
   transition: 0.3s;
 }
-header #navContainer .ulNavBar .navBtn:hover,
-header #navContainer .ulNavBar focus,
-header #navContainer .ulNavBar active {
+header .navContainer .ulNavBar .navBtn:hover,
+header .navContainer .ulNavBar focus,
+header .navContainer .ulNavBar active {
   background-color: white;
   color: black;
 }
-header #navContainer .ulNavBar .navBtn:hover a,
-header #navContainer .ulNavBar focus a,
-header #navContainer .ulNavBar active a {
+header .navContainer .ulNavBar .navBtn:hover a,
+header .navContainer .ulNavBar focus a,
+header .navContainer .ulNavBar active a {
   color: black;
 }
 
@@ -118,7 +173,6 @@ main .backgroundHero {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), #131615), url("./assets/background1.jpg");
 }
 main .heroContainer {
-  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,14 +192,14 @@ main .heroContainer .divRight {
   width: 45%;
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
 }
 main .heroContainer .divRight .creatorImg {
   width: 50%;
 }
 main .projectsContainer {
-  height: 70vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,7 +213,7 @@ main .projectsContainer .centerDiv p {
   opacity: 0.7;
 }
 main .projectsContainer .projectsMain {
-  padding: 30px;
+  padding: 30px 10px;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -214,6 +268,154 @@ footer .footerContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+  #navContainer {
+    justify-content: center;
+    align-items: center;
+  }
+  #navContainer .ulNavBar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .heroContainer {
+    height: 60vh;
+    padding: 0 20px;
+    gap: 5%;
+  }
+  .heroContainer .divLeft {
+    min-width: 55%;
+    flex-direction: column;
+  }
+  .heroContainer .divRight {
+    min-width: 30%;
+  }
+  .heroContainer .divRight .creatorImg {
+    min-width: 80%;
+  }
+  .projectsContainer {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .projectsContainer .centerDiv {
+    text-align: center;
+  }
+  .projectsContainer .centerDiv p {
+    margin: 5px;
+    opacity: 0.7;
+  }
+  .projectsContainer .projectsMain {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .projectsContainer .projectsCard {
+    min-width: 40%;
+  }
+  .projectsContainer .projectCardContent {
+    padding: 15px;
+  }
+  .projectsContainer .projectCardContent p {
+    padding-top: 10px;
+  }
+  .projectsContainer .projectCardContent a {
+    padding-top: 10px;
+  }
+  .projectsContainer footer {
+    padding: 20px 10px;
+  }
+  .projectsContainer footer .footerContainer {
+    text-align: center;
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  #navContainer {
+    justify-content: center;
+    align-items: center;
+  }
+  #navContainer .ulNavBar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .heroContainer {
+    padding: 20px 10px;
+    flex-wrap: wrap;
+    gap: 5%;
+  }
+  .heroContainer .divLeft {
+    order: 2;
+    min-width: 90%;
+    flex-direction: column;
+  }
+  .heroContainer .divLeft h1,
+  .heroContainer .divLeft h2,
+  .heroContainer .divLeft p {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .heroContainer .divRight {
+    order: 1;
+    min-width: 90%;
+  }
+  .heroContainer .divRight .creatorImg {
+    min-width: 70%;
+  }
+  .projectsContainer {
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .projectsContainer .centerDiv {
+    text-align: center;
+  }
+  .projectsContainer .centerDiv p {
+    margin: 5px;
+    opacity: 0.7;
+  }
+  .projectsContainer .projectsMain {
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .projectsContainer .projectsCard {
+    margin: 0 auto;
+    min-width: 90%;
+  }
+  .projectsContainer .cardImg {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .projectsContainer .projectCardContent {
+    padding: 10px;
+  }
+  .projectsContainer .projectCardContent h3 {
+    padding-bottom: 5px;
+  }
+  .projectsContainer .projectCardContent p {
+    font-size: 13px;
+    padding-bottom: 10px;
+  }
+  .projectsContainer .projectCardContent a {
+    font-size: 14px;
+  }
+  footer .footerContainer {
+    text-align: center;
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

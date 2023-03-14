@@ -22,113 +22,111 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div id="navContainer">
-          <div>
-            <ul class="ulNavBar">
-              <li><a href="#projetos">Projetos</a></li>
-              <li>
+      <nav class="center">
+        <div class="container navContainer" >
+            <div class="ulNavBar">
+              <a href="#projetos">Projetos</a>
                 <a target="__blank" href="https://github.com/rodrigolibragawebdev"><i class="fa-brands fa-github"></i></a>
-              </li>
-              <li>
+
                 <a target="__blank" href="https://www.linkedin.com/in/rodrigo-libraga-fernandes/"><i class="fa-brands fa-linkedin-in"></i></i></a>
-              </li>
-              <li><button class="navBtn"><a href="./assets/curriculoPdf.pdf" download="Currículo em pdf">BAIXAR CURRÍCULO</a>
-              </button></li>
+              <button class="navBtn"><a href="./assets/curriculoPdf.pdf" download="Currículo em pdf">BAIXAR CURRÍCULO</a>
+              </button>
             </ul>
-          </div>
-          <!-- <div class="outrosItens">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-          </div> -->
+        </div>
         </div>
       </nav>
     </header>
     <main>
       <div class="center backgroundHero">
-        <section data-aos="fade" data-aos-duration="1000" class="container heroContainer">
-          <div class="divLeft">
+        <!-- hero section -->
+        <div data-aos="fade" data-aos-duration="1000" class="container heroContainer">
+          <!-- section 1 -->
+          <section class="divLeft">
             <h1>RODRIGO LIBRAGA FERNANDES</h1>
             <h2>Desenvolvedor Front-End JS/React</h2>
             <p>Estudante de tecnologia, atualmente focado no desenvolvimento front-end. Desenvolvo sites e aplicações utilizando builders, CSS3, HTML5,JavaScript e React. Perfil de profissional honesto, dedicado e com vontade de fazer. Autodidata para resolução de problemas e obtenção de conhecimento.</p>
-          </div>
-          <div class="divRight">
+          </section>
+          <!-- section 2 -->
+          <section class="divRight">
             <img
               class="creatorImg"
               src="./assets/rodrigo-libraga.png"
               alt="Foto user"
             />
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
       <div class="center">
-        <section data-aos="fade-up" data-aos-duration="3000" id="projetos" class="container projectsContainer">
-          <div class="container centerDiv">
-            <h2>Projetos</h2>
-            <p>Conheça alguns dos meus projetos</p>
+      <!-- section projetos -->
+      <div data-aos="fade-up" data-aos-duration="3000" id="projetos" class="container projectsContainer">
+        <!-- headline -->
+        <div class="centerDiv">
+          <h2>Projetos</h2>
+          <p>Conheça alguns dos meus projetos</p>
+        </div>
+        <!-- início dos projetos  -->
+        <div class="container projectsMain">
+          <!-- cards -->
+          <div class="projectsCard">
+            <a
+              class="coverLink"
+              target="_blank"
+              href="https://projeto-trocador-de-cores.vercel.app"
+            ></a>
+            <img class="cardImg" src="./assets/trocador-de-cores.PNG" alt="card" />
+            <div class="projectCardContent">
+              <h3>Trocador de Cores</h3>
+              <p>Este projeto tem finalidade de implementar uma solução em JavaScript para alteração do background, de forma aleatória, com base num array de itens dado previamente.</p>
+              <a href="">Ver mais</a>
+            </div>
           </div>
-          <div class="container projectsMain">
-            <!-- Cards -->
-            <div class="projectsCard">
-              <a
-                class="coverLink"
-                target="_blank"
-                href="https://projeto-trocador-de-cores.vercel.app"
-              ></a>
-              <img class="cardImg" src="./assets/trocador-de-cores.PNG" alt="card" />
-              <div class="projectCardContent">
-                <h3>Trocador de Cores</h3>
-                <p>Este projeto tem finalidade de implementar uma solução em JavaScript para alteração do background, de forma aleatória, com base num array de itens dado previamente.</p>
-                <a href="">Ver mais</a>
-              </div>
+          <div class="projectsCard hidden">
+            <a
+              class="coverLink"
+              target="_blank"
+              href="https://www.google.com"
+            ></a>
+            <img class="cardImg" src="./assets/card-img.jpg" alt="card" />
+            <img src="" alt="" />
+            <div class="projectCardContent">
+              <h3>title</h3>
+              <p>description</p>
+              <a href="">Ver mais</a>
             </div>
-            <!-- <div class="projectsCard">
-              <a
-                class="coverLink"
-                target="_blank"
-                href="https://www.google.com"
-              ></a>
-              <img class="cardImg" src="./assets/card-img.jpg" alt="card" />
-              <img src="" alt="" />
-              <div class="projectCardContent">
-                <h3>title</h3>
-                <p>description</p>
-                <a href="">Ver mais</a>
-              </div>
-            </div>
-            <div class="projectsCard">
-              <a
-                class="coverLink"
-                target="_blank"
-                href="https://www.google.com"
-              ></a>
-              <img class="cardImg" src="./assets/card-img.jpg" alt="card" />
-              <div class="projectCardContent">
-                <h3>title</h3>
-                <p>description</p>
-                <a href="">Ver mais</a>
-              </div>
-            </div>
-            <div class="projectsCard">
-              <a
-                class="coverLink"
-                target="_blank"
-                href="https://www.google.com"
-              ></a>
-              <img class="cardImg" src="./assets/card-img.jpg" alt="card" />
-              <div class="projectCardContent">
-                <h3>title</h3>
-                <p>description</p>
-                <a class="link" href="">Ver mais</a>
-              </div>
-            </div> -->
-            <!-- end of cards -->
           </div>
-        </section>
-      </div>
+          <div class="projectsCard hidden">
+            <a
+              class="coverLink"
+              target="_blank"
+              href="https://www.google.com"
+            ></a>
+            <img class="cardImg" src="./assets/card-img.jpg" alt="card" />
+            <div class="projectCardContent">
+              <h3>title</h3>
+              <p>description</p>
+              <a href="">Ver mais</a>
+            </div>
+          </div>
+          <div class="projectsCard hidden">
+            <a
+              class="coverLink"
+              target="_blank"
+              href="https://www.google.com"
+            ></a>
+            <img class="cardImg" src="./assets/card-img.jpg" alt="card" />
+            <div class="projectCardContent">
+              <h3>title</h3>
+              <p>description</p>
+              <a class="link" href="">Ver mais</a>
+            </div>
+          </div>
+          <!-- end of cards -->
+        </div>
+      </div> 
+    </div> 
     </main>
-    <footer>
+    <footer class="center">
+      <!-- footer -->
       <section class="container footerContainer">
         <div class="centerDiv"><p>Desenvolvido em 2023 - Todos os direitos reservados</p></div>
       </section>
