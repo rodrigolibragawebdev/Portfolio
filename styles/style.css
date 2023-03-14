@@ -33,8 +33,8 @@
 }
 
 body {
-  background-color: #131615;
-  color: white;
+  background-color: #272727;
+  color: #eeeeee;
 }
 
 a {
@@ -130,7 +130,7 @@ button {
 header {
   padding: 20px 0;
   background-color: #090909;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 1px rgb(8, 8, 8);
 }
 header .navContainer {
   display: flex;
@@ -143,7 +143,7 @@ header .navContainer .ulNavBar {
   list-style: none;
   display: flex;
   align-items: center;
-  color: white;
+  color: #eee;
   gap: 20px;
 }
 header .navContainer .ulNavBar .navBtn {
@@ -170,9 +170,10 @@ main .backgroundHero {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), #131615), url("./assets/background1.jpg");
+  background-image: linear-gradient(to bottom, rgba(8, 8, 8, 0.8), rgb(39, 39, 39)), url("../assets/background1.jpg");
 }
 main .heroContainer {
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -223,11 +224,11 @@ main .projectsContainer .projectsMain {
 main .projectsContainer .projectsCard {
   position: relative;
   width: 20%;
-  background-color: #090909;
+  background-color: #191919;
   border-radius: 5px;
   transition: 0.3s;
   cursor: pointer;
-  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.7);
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
 }
 main .projectsContainer .projectsCard:hover {
   scale: 1.05;
@@ -246,9 +247,6 @@ main .projectsContainer .cardImg {
 main .projectsContainer .projectCardContent {
   padding: 10px;
 }
-main .projectsContainer .projectCardContent h3 {
-  padding-bottom: 5px;
-}
 main .projectsContainer .projectCardContent p {
   font-size: 13px;
   padding-bottom: 10px;
@@ -256,12 +254,25 @@ main .projectsContainer .projectCardContent p {
 main .projectsContainer .projectCardContent a {
   font-size: 14px;
 }
+main .projectsContainer .projectCardContent .projectsCategory {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0;
+}
+main .projectsContainer .projectCardContent .projectsCategory p {
+  padding: 3px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 12px;
+}
 
 footer {
   padding: 20px 0;
   display: flex;
   justify-content: center;
-  background-color: #090909;
+  background-color: #191919;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 footer .footerContainer {
@@ -327,13 +338,6 @@ footer .footerContainer {
   }
   .projectsContainer .projectCardContent a {
     padding-top: 10px;
-  }
-  .projectsContainer footer {
-    padding: 20px 10px;
-  }
-  .projectsContainer footer .footerContainer {
-    text-align: center;
-    font-size: 12px;
   }
 }
 @media (max-width: 500px) {

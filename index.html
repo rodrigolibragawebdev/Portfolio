@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -58,11 +58,12 @@
       </div>
       <div class="center">
       <!-- section projetos -->
-      <div data-aos="fade-up" data-aos-duration="3000" id="projetos" class="container projectsContainer">
+      <div id="projetos" class="container projectsContainer">
         <!-- headline -->
+        <div data-aos="fade-up" data-aos-duration="3000">
         <div class="centerDiv">
           <h2>Projetos</h2>
-          <p>Conheça alguns dos meus projetos</p>
+          <p>Conheça os meus projetos</p>
         </div>
         <!-- início dos projetos  -->
         <div class="container projectsMain">
@@ -76,9 +77,16 @@
             <img class="cardImg" src="./assets/trocador-de-cores.PNG" alt="card" />
             <div class="projectCardContent">
               <h3>Trocador de Cores</h3>
+              <div class="projectsCategory">
+                <p>CSS3</p>
+                <p>HTML5</p>
+                <p>JavaScript</p>
+              </div>
               <p>Este projeto tem finalidade de implementar uma solução em JavaScript para alteração do background, de forma aleatória, com base num array de itens dado previamente.</p>
               <a href="">Ver mais</a>
+              
             </div>
+            
           </div>
           <div class="projectsCard hidden">
             <a
@@ -121,6 +129,7 @@
             </div>
           </div>
           <!-- end of cards -->
+        
         </div>
       </div> 
     </div> 
