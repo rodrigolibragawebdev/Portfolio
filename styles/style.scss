@@ -70,7 +70,24 @@ main {
       p {
         opacity: 0.7;
       }
+      .ctts {
+        margin-bottom: 15px;
+        color: greenyellow;
+      }
+      .tag1 {
+        margin-top: 10px;
+        display: inline;
+        color: greenyellow;
+        border: 1px solid greenyellow;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 12px;
+      }
+      .ctaBtn {
+        margin-top: 10px;
+      }
     }
+
     .divRight {
       width: 45%;
       display: flex;
@@ -85,6 +102,7 @@ main {
   }
 
   .projectsContainer {
+    margin: 0 auto;
     min-height: 70vh;
     display: flex;
     flex-direction: column;
@@ -188,6 +206,16 @@ footer {
     .divLeft {
       min-width: 55%;
       flex-direction: column;
+      .divCtts {
+        .ctts {
+          display: block;
+        }
+        text-align: left;
+        .ctaBtn {
+          margin-top: 20px;
+          display: block;
+        }
+      }
     }
     .divRight {
       min-width: 30%;
@@ -246,6 +274,8 @@ footer {
   }
 
   .heroContainer {
+    min-height: 100vh;
+    border: 1px solid $borderTempColor;
     padding: 20px 10px;
     flex-wrap: wrap;
     gap: 5%;
@@ -259,6 +289,20 @@ footer {
       p {
         margin: 0 auto;
         text-align: center;
+      }
+      .divCtts {
+        margin: 0 auto;
+        .ctts {
+          display: block;
+          margin-bottom: 10px;
+        }
+        text-align: center;
+        .ctaBtn {
+          margin-top: 20px;
+          display: block;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
       }
     }
     .divRight {

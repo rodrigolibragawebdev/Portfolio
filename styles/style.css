@@ -127,6 +127,27 @@ button {
   display: none;
 }
 
+.globalBtn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.globalBtn:hover,
+focus,
+active {
+  background-color: white;
+  color: black;
+}
+.globalBtn:hover a,
+focus a,
+active a {
+  color: black;
+}
+
 header {
   padding: 20px 0;
   background-color: #090909;
@@ -189,6 +210,22 @@ main .heroContainer .divLeft {
 main .heroContainer .divLeft p {
   opacity: 0.7;
 }
+main .heroContainer .divLeft .ctts {
+  margin-bottom: 15px;
+  color: greenyellow;
+}
+main .heroContainer .divLeft .tag1 {
+  margin-top: 10px;
+  display: inline;
+  color: greenyellow;
+  border: 1px solid greenyellow;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+main .heroContainer .divLeft .ctaBtn {
+  margin-top: 10px;
+}
 main .heroContainer .divRight {
   width: 45%;
   display: flex;
@@ -200,6 +237,7 @@ main .heroContainer .divRight .creatorImg {
   width: 50%;
 }
 main .projectsContainer {
+  margin: 0 auto;
   min-height: 70vh;
   display: flex;
   flex-direction: column;
@@ -302,6 +340,16 @@ footer .footerContainer {
     min-width: 55%;
     flex-direction: column;
   }
+  .heroContainer .divLeft .divCtts {
+    text-align: left;
+  }
+  .heroContainer .divLeft .divCtts .ctts {
+    display: block;
+  }
+  .heroContainer .divLeft .divCtts .ctaBtn {
+    margin-top: 20px;
+    display: block;
+  }
   .heroContainer .divRight {
     min-width: 30%;
   }
@@ -353,6 +401,8 @@ footer .footerContainer {
     gap: 5px;
   }
   .heroContainer {
+    min-height: 100vh;
+    border: 1px solid red;
     padding: 20px 10px;
     flex-wrap: wrap;
     gap: 5%;
@@ -367,6 +417,20 @@ footer .footerContainer {
   .heroContainer .divLeft p {
     margin: 0 auto;
     text-align: center;
+  }
+  .heroContainer .divLeft .divCtts {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .heroContainer .divLeft .divCtts .ctts {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .heroContainer .divLeft .divCtts .ctaBtn {
+    margin-top: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
   }
   .heroContainer .divRight {
     order: 1;
