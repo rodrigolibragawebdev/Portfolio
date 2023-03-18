@@ -84,7 +84,7 @@ main {
         font-size: 12px;
       }
       .ctaBtn {
-        margin-top: 10px;
+        margin-top: 20px;
       }
     }
 
@@ -261,7 +261,7 @@ footer {
 }
 
 @media (max-width: 500px) {
-  #navContainer {
+  .navContainer {
     justify-content: center;
     align-items: center;
     .ulNavBar {
@@ -275,8 +275,8 @@ footer {
 
   .heroContainer {
     min-height: 100vh;
-    border: 1px solid $borderTempColor;
     padding: 20px 10px;
+    padding-bottom: 20px;
     flex-wrap: wrap;
     gap: 5%;
 

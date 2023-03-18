@@ -224,7 +224,7 @@ main .heroContainer .divLeft .tag1 {
   font-size: 12px;
 }
 main .heroContainer .divLeft .ctaBtn {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 main .heroContainer .divRight {
   width: 45%;
@@ -389,11 +389,11 @@ footer .footerContainer {
   }
 }
 @media (max-width: 500px) {
-  #navContainer {
+  .navContainer {
     justify-content: center;
     align-items: center;
   }
-  #navContainer .ulNavBar {
+  .navContainer .ulNavBar {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -402,8 +402,8 @@ footer .footerContainer {
   }
   .heroContainer {
     min-height: 100vh;
-    border: 1px solid red;
     padding: 20px 10px;
+    padding-bottom: 20px;
     flex-wrap: wrap;
     gap: 5%;
   }
