@@ -95,14 +95,31 @@
             <h2>Projetos</h2>
             <p>Conheça os meus projetos</p>
           </div>
+          <div class="centerDiv search">
+            <label for="searchInput"> </label>
+            <input
+              class="searchInput"
+              placeholder="procure por um tema"
+              id="searchInput"
+              name="searchInput"
+              type="text"
+            />
+            <button class="clearBtn" id="clear" name="clear" type="submit">
+              Limpar filtro
+            </button>
+          </div>
           <!-- início dos projetos  -->
           <div id="projectsMain" class="container projectsMain">
             <!-- cards -->
             <!-- conteúdo dinâmico JS -->
           </div>
+          <div id="noResult" class="hidden centerDiv">
+            <p>Nenhum Resultado</p>
+          </div>
           <!-- end of cards -->
         </div>
       </section>
+      <div class="contain"></div>
     </main>
     <footer class="center">
       <!-- footer -->
